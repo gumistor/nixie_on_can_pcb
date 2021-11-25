@@ -1,0 +1,80 @@
+* EESchema Netlist Version 1.1 (Spice format) creation date: 2014-12-27 15:05:59
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+*Sheet Name:/
+U1  N-000028 /digitDriver/D0 /digitDriver/D1 /digitDriver/D2 /digitDriver/D3 /digitDriver/D4 /digitDriver/D5 GND N-000046 N-000045 /digitDriver/D6 /digitDriver/D7 /digitDriver/D8 /digitDriver/D9 /digitDriver/Ddot /lampaLC513_s0/NixieOnOff /lampaLC513_s1/NixieOnOff ? GND +3.3V ? ? /cantx /canrx ? N-000026 N-000002 N-000001 PIC18F2480		
+C1  N-000046 GND 22p		
+C2  N-000045 GND 22p		
+X1  N-000046 N-000045 10MHz		
+R1  N-000028 +3.3V 10k		
+P1  +3.3V GND N-000028 N-000001 N-000002 N-000026 CONN_6		
+R3  GND N-000026 10k		
+U2  /cantx GND +3.3V /canrx ? N-000027 N-000010 N-000013 MCP2551		
+R2  GND N-000013 47k		
+J1  ? GND N-000010 ? N-000027 ? ? ? +3.3V DB9		
+C5  +3.3V GND 100n		
+C3  +3.3V GND 100n		
+C4  +3.3V GND 1u		
+*Sheet Name:/lampaLC513_s0/
+V1  /digitDriver/A0 /digitDriver/A1 /digitDriver/A2 /digitDriver/A3 /digitDriver/A4 /digitDriver/A5 /digitDriver/A6 /digitDriver/A7 /digitDriver/A8 /digitDriver/A9 N-000049 /digitDriver/Adot LC513		
+Q2  N-000051 VAA N-000052 PMBTA92		
+Q1  /lampaLC513_s0/NixieOnOff N-000050 GND PMBTA42		
+R6  N-000052 N-000049 10k/0,5W		
+R5  VAA N-000051 100k		
+R4  N-000051 N-000050 470k		
+*Sheet Name:/lampaLC513_s1/
+V2  /digitDriver/A0 /digitDriver/A1 /digitDriver/A2 /digitDriver/A3 /digitDriver/A4 /digitDriver/A5 /digitDriver/A6 /digitDriver/A7 /digitDriver/A8 /digitDriver/A9 N-000055 /digitDriver/Adot LC513		
+Q4  N-000054 VAA N-000053 PMBTA92		
+Q3  /lampaLC513_s1/NixieOnOff N-000056 GND PMBTA42		
+R9  N-000053 N-000055 10k/0,5W		
+R8  VAA N-000054 100k		
+R7  N-000054 N-000056 470k		
+*Sheet Name:/digitDriver/
+*Sheet Name:/digitDriver/digitDriverOne_dot/
+D1  GND /digitDriver/Adot BZV55C75		
+Q5  N-000057 /digitDriver/Adot GND PMBTA42		
+R10  /digitDriver/Ddot N-000057 R		
+*Sheet Name:/digitDriver/digitDriverOne_1/
+D2  GND /digitDriver/A1 BZV55C75		
+Q6  N-000058 /digitDriver/A1 GND PMBTA42		
+R11  /digitDriver/D9 N-000058 R		
+*Sheet Name:/digitDriver/digitDriverOne_2/
+D3  GND /digitDriver/A2 BZV55C75		
+Q7  N-000059 /digitDriver/A2 GND PMBTA42		
+R12  /digitDriver/D8 N-000059 R		
+*Sheet Name:/digitDriver/digitDriverOne_3/
+D4  GND /digitDriver/A3 BZV55C75		
+Q8  N-000060 /digitDriver/A3 GND PMBTA42		
+R13  /digitDriver/D7 N-000060 R		
+*Sheet Name:/digitDriver/digitDriverOne_4/
+D5  GND /digitDriver/A4 BZV55C75		
+Q9  N-000061 /digitDriver/A4 GND PMBTA42		
+R14  /digitDriver/D6 N-000061 R		
+*Sheet Name:/digitDriver/digitDriverOne_5/
+D6  GND /digitDriver/A5 BZV55C75		
+Q10  N-000062 /digitDriver/A5 GND PMBTA42		
+R15  /digitDriver/D5 N-000062 R		
+*Sheet Name:/digitDriver/digitDriverOne_6/
+D7  GND /digitDriver/A6 BZV55C75		
+Q11  N-000063 /digitDriver/A6 GND PMBTA42		
+R16  /digitDriver/D4 N-000063 R		
+*Sheet Name:/digitDriver/digitDriverOne_7/
+D8  GND /digitDriver/A7 BZV55C75		
+Q12  N-000064 /digitDriver/A7 GND PMBTA42		
+R17  /digitDriver/D3 N-000064 R		
+*Sheet Name:/digitDriver/digitDriverOne_8/
+D9  GND /digitDriver/A8 BZV55C75		
+Q13  N-000065 /digitDriver/A8 GND PMBTA42		
+R18  /digitDriver/D2 N-000065 R		
+*Sheet Name:/digitDriver/digitDriverOne_9/
+D10  GND /digitDriver/A9 BZV55C75		
+Q14  N-000066 /digitDriver/A9 GND PMBTA42		
+R19  /digitDriver/D1 N-000066 R		
+*Sheet Name:/digitDriver/digitDriverOne_0/
+D11  GND /digitDriver/A0 BZV55C75		
+Q15  N-000067 /digitDriver/A0 GND PMBTA42		
+R20  /digitDriver/D0 N-000067 R		
+
+.end
